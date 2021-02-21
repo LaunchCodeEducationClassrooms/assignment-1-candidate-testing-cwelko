@@ -51,9 +51,9 @@ for (let i = 0; i < questions.length; i++){
 
 let grade = (numCorrect/questions.length)*100;
 if (grade >= 80){
-console.log(`\n>>> Overall grade: ${grade}% (${numCorrect} out of ${questions.length} responses correct) <<< \nStatus: PASSED! `);
+console.log(`\n>>> Overall grade: ${grade}% (${numCorrect} of ${questions.length} responses correct) <<< \nStatus: PASSED! `);
 } else { 
-  console.log(`\n>>>Overall grade: ${grade}% (${numCorrect} out of ${questions.length} responses correct)<<<  \n>>> Status: FAILED <<<`);
+  console.log(`\n>>>Overall grade: ${grade}% (${numCorrect} of ${questions.length} responses correct)<<<  \n>>> Status: FAILED <<<`);
 }
   return grade;
   
