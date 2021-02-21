@@ -35,9 +35,9 @@ function gradeQuiz(candidateAnswers) {
 console.log(`\nCandidate name: ${candidateName}`);
 for (let i = 0; i < candidateAnswers.length; i++) {
 if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) { 
-  console.log(`${i + 1}) ${questions[i]}\nYour answer: ${candidateAnswers[i]}. \nCorrect answer: ${correctAnswers[i]}. You are correct!\n`);
+  console.log(`${i + 1}) ${questions[i]}\nYour answer: ${candidateAnswers[i]}. \nCorrect answer: ${correctAnswers[i]}. \n`);
   } else {
-    console.log(`${i + 1}) ${questions[i]} \nYour answer: ${candidateAnswers[i]}. \nCorrect answer: ${correctAnswers[i]}. You are incorrect\n`);
+    console.log(`${i + 1}) ${questions[i]} \nYour answer: ${candidateAnswers[i]}. \nCorrect answer: ${correctAnswers[i]}. \n`);
   }
 }
 
@@ -51,9 +51,9 @@ for (let i = 0; i < questions.length; i++){
 
 let grade = (numCorrect/questions.length)*100;
 if (grade >= 80){
-console.log(`\nOverall grade: ${grade}% (${numCorrect} out of ${questions.length} responses correct) \nStatus: PASSED! `);
+console.log(`\n>>> Overall grade: ${grade}% (${numCorrect} out of ${questions.length} responses correct) <<< \nStatus: PASSED! `);
 } else { 
-  console.log(`\nOverall grade: ${grade}% (${numCorrect} out of ${questions.length} responses correct)  \nStatus: FAILED`);
+  console.log(`\n>>>Overall grade: ${grade}% (${numCorrect} out of ${questions.length} responses correct)<<<  \n>>> Status: FAILED <<<`);
 }
   return grade;
   
