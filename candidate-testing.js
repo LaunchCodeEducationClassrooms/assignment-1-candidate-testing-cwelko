@@ -35,9 +35,9 @@ function gradeQuiz(candidateAnswers) {
 console.log(`\nCandidate name: ${candidateName}`);
 for (let i = 0; i < candidateAnswers.length; i++) {
 if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) { 
-  console.log(`${i + 1}) ${questions[i]}\nYour answer: ${candidateAnswers[i]}. \nCorrect answer: ${correctAnswers[i]}. \n`);
+  console.log(`${i + 1}) ${questions[i]}\nYour Answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]} \n`);
   } else {
-    console.log(`${i + 1}) ${questions[i]} \nYour answer: ${candidateAnswers[i]}. \nCorrect answer: ${correctAnswers[i]}. \n`);
+    console.log(`${i + 1}) ${questions[i]} \nYour Answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]} \n`);
   }
 }
 
